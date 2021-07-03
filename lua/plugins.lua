@@ -64,7 +64,7 @@ return require("packer").startup(function(use)
     -- TODO remove when open on dir is supported by nvimtree
     use "kevinhwang91/rnvimr"
 
-    -- use {'lukas-reineke/indent-blankline.nvim', opt=true, branch = 'lua'}
+    use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
     use {"lewis6991/gitsigns.nvim", opt = true}
     use {'f-person/git-blame.nvim', opt = true}
     use {"folke/which-key.nvim", opt = true}
@@ -88,6 +88,15 @@ return require("packer").startup(function(use)
 
     -- Zen Mode
     use {"Pocco81/TrueZen.nvim", opt = true}
+
+    -- php related stuff
+    use 'ncm2/ncm2'
+    use 'roxma/nvim-yarp'
+    use 'roxma/vim-hug-neovim-rpc'
+    use { 'phpactor/phpactor', ft = {'php'}, run = ':call phpactor#Update()' }
+    use { 'phpactor/ncm2-phpactor', ft = {'php'} }
+    use 'ncm2/ncm2-ultisnips'
+    use { 'alvan/vim-php-manual', ft= {'php'} }
 
     require_plugin("nvim-lspconfig")
     require_plugin("lspsaga.nvim")

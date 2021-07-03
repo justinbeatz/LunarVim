@@ -1,0 +1,1 @@
+/home/justinbeatz/.config/nvim/ftplugin/php.vim
