@@ -173,75 +173,6 @@ return require("packer").startup(function(use)
     use 'ncm2/ncm2-ultisnips'
     use { 'alvan/vim-php-manual', ft= {'php'} }
 
-    require_plugin("nvim-lspconfig")
-    require_plugin("lspsaga.nvim")
-    require_plugin("nvim-lspinstall")
-    require_plugin('trouble.nvim')
-    require_plugin("friendly-snippets")
-    require_plugin("popup.nvim")
-    require_plugin("plenary.nvim")
-    require_plugin("telescope.nvim")
-    require_plugin('telescope-project.nvim')
-    require_plugin("nvim-dap")
-    require_plugin("nvim-compe")
-    require_plugin("vim-vsnip")
-    require_plugin("nvim-treesitter")
-    require_plugin("nvim-ts-autotag")
-    require_plugin('vim-matchup')
-    require_plugin("nvim-tree.lua")
-    require_plugin("gitsigns.nvim")
-    require_plugin("git-blame.nvim")
-    require_plugin("which-key.nvim")
-    require_plugin("dashboard-nvim")
-    require_plugin("nvim-autopairs")
-    require_plugin("nvim-comment")
-    require_plugin("nvim-bqf")
-    require_plugin("nvcode-color-schemes.vim")
-    require_plugin("nvim-web-devicons")
-    require_plugin("galaxyline.nvim")
-    require_plugin("barbar.nvim")
-    require_plugin('lsp-rooter.nvim')
-    require_plugin("TrueZen.nvim")
-    require_plugin("nvim-ts-context-commentstring")
-
-    -- Extras
-    if O.extras then
-        use {'metakirby5/codi.vim', opt = true}
-        require_plugin('codi.vim')
-        use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install', opt = true}
-        require_plugin('markdown-preview.nvim')
-        use {'numToStr/FTerm.nvim', opt = true}
-        require_plugin('numToStr/FTerm.nvim')
-        use {'monaqa/dial.nvim', opt = true}
-        require_plugin('dial.nvim')
-        use {'nacro90/numb.nvim', opt = true}
-        require_plugin('numb.nvim')
-        use {'turbio/bracey.vim', run = 'npm install --prefix server', opt = true}
-        require_plugin('bracey.vim')
-        use {'phaazon/hop.nvim', opt = true}
-        require_plugin('hop.nvim')
-        use {'norcalli/nvim-colorizer.lua', opt = true}
-        require_plugin('nvim-colorizer.lua')
-        use {'windwp/nvim-spectre', opt = true}
-        require_plugin('windwp/nvim-spectre')
-        use {'simrat39/symbols-outline.nvim', opt = true}
-        require_plugin('symbols-outline.nvim')
-        -- folke/todo-comments.nvim
-        -- gennaro-tedesco/nvim-jqx
-        -- TimUntersberger/neogit
-        -- folke/lsp-colors.nvim
-        -- simrat39/symbols-outline.nvim
-
-        -- Git
-        -- use {'tpope/vim-fugitive', opt = true}
-        -- use {'tpope/vim-rhubarb', opt = true}
-        -- pwntester/octo.nvim
-
-        -- Easily Create Gists
-        -- use {'mattn/vim-gist', opt = true}
-        -- use {'mattn/webapi-vim', opt = true}
-    end
-
     use {
         "folke/zen-mode.nvim",
         cmd = "ZenMode",
@@ -506,7 +437,6 @@ return require("packer").startup(function(use)
     -- Rust tools
     -- TODO: use lazy loading maybe?
     use {"simrat39/rust-tools.nvim", disable = not O.lang.rust.active}
->>>>>>> a38e8e7fe9eebc06ed55d44a3eb5904968d02457
 
     -- Elixir
     use {"elixir-editors/vim-elixir",
